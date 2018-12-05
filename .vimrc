@@ -15,6 +15,7 @@ set statusline+=%l/%L "gives current line number and total number of lines
 map <C-y> "*y"
 set backspace=indent,eol,start
 set relativenumber  "sets the relativenumbers in vim
+set numberwidth=2   "sets the width of number bar
 
 " My all mappings
 
