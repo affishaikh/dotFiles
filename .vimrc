@@ -14,14 +14,18 @@ set statusline=%f\ -\ FileType:\ %y "give filename and filetype
 set statusline+=%l/%L "gives current line number and total number of lines 
 map <C-y> "*y"
 set backspace=indent,eol,start
-set relativenumber  "sets the relativenumbers in vim
+"set relativenumber  "sets the relativenumbers in vim
 set numberwidth=2   "sets the width of number bar
 
 " My all mappings
-
+nnoremap <space> :bnext<CR>
+map wc viw
+imap cl<tab> console.log();<left><left> 
+imap <C-d> <esc>ddi
 
 set laststatus=2
 let mapleader=","
+let maplocalleader="-"
 
 "Git gutter
 set updatetime=10

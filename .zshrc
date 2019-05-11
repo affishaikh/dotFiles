@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/aftabshk/.oh-my-zsh"
+export PATH=${PATH}:/usr/local/mysql/bin/
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -97,9 +98,24 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
 PATH=$PATH:/Users/aftabshk/bin
+
+#Python anaconda path
+PATH=$PATH:/Users/aftabshk/anaconda3/bin
 
 # My Aliases
 alias v=vim
 alias gi="git init"
 alias mk=". mk"
+
+# My bindings
+bindkey "^f" forward-word
+bindkey "^b" backward-word
+bindkey "^d" delete-word
+
+# Autojump
+
+[[ -s /Users/aftabshk/.autojump/etc/profile.d/autojump.sh ]] && source /Users/aftabshk/.autojump/etc/profile.d/autojump.sh
+
+	autoload -U compinit && compinit -u
